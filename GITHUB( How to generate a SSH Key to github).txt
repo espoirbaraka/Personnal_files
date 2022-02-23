@@ -1,0 +1,21 @@
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh-keygen
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cat /C/Users/ESPOIR/.ssh/
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cat /C/Users/ESPOIR/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUFRm75Zp/MugUQWBWh6t2Ff8sZtY3kTG2RGsU8NibcvnYf1LSrfYnGrCBZO2Rh5LZTTERS0pLHylSlUBjMHlLm+xIu3ZXnPk0yWOjspH03lum/NPI4K9oWnqk+SuVb+L1Z3fLogm91QdG0i0A59ciKnI4jVxFCfk7If8ApVnLbiwcMuslBMvvsR5TUosZXDZuszhVctonrYNPcffAc6E4MzuYdfC2+WXp9+P3r0/4iAe9ONuK0zCoKzgU1uEFhL2CqMIpkVldHZH1o3TxBVHO7VslE1KTCd5lN8o+mpLPJ9Vx/s6mvzCHwfASAaL6Eh5rTL0hxMA2Q1o6KO63q1eJ ESPOIR@ESPOIR-LABO
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ eval `ssh-agent -s`
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh-agent -s
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh-add ~/.ssh/id_rsa
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh -T git@github.com

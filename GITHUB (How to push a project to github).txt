@@ -1,0 +1,29 @@
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs
+$ git clone git@github.com:espoirbaraka/congopedia.git
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs
+$ git status
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs
+$ cd congopedia
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs/congopedia (master)
+$ git status
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs/congopedia (master)
+$ git add -A
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs/congopedia (master)
+$ git commit -m "Mon premier commit de congopedia: 26/01/2022"
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs/congopedia (master)
+$ git push
+Enter passphrase for key '/c/Users/ESPOIR/.ssh/id_rsa':
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs/congopedia (master)
+$ git push
+Enter passphrase for key '/c/Users/ESPOIR/.ssh/id_rsa':
+Everything up-to-date
+
+ESPOIR@ESPOIR-LABO MINGW64 /c/xampp/htdocs/congopedia (master)
+$

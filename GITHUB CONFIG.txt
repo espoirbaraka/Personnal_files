@@ -1,0 +1,265 @@
+ESPOIR@ESPOIR-LABO MINGW64 ~
+$ git --version
+git version 2.19.1.windows.1
+
+ESPOIR@ESPOIR-LABO MINGW64 ~
+$ pwd
+/c/Users/ESPOIR
+
+ESPOIR@ESPOIR-LABO MINGW64 ~
+$ ls
+'3D Objects'/
+ AbstractFactory/
+ AndroidStudioProjects/
+ AppData/
+'Application Data'@
+ banque/
+ biac/
+'biac BARAKA BIGEGA ESPOIR.rar'
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Downloads/
+ ecole/
+ ecole2/
+ ecole2.rar
+ examenjsp/
+ Favorites/
+ IntelGraphicsProfiles/
+ java1/
+ JavaOO/
+ l1ig/
+ Links/
+'Local Settings'@
+'Menu Démarrer'@
+'Mes documents'@
+ MicrosoftEdgeBackups/
+ Modèles@
+ Music/
+'NCH Software Suite'/
+ NTUSER.DAT
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ NTUSER.DAT{1717d1a1-30db-11ec-9797-ee8144e1d182}.TM.blf
+ NTUSER.DAT{1717d1a1-30db-11ec-9797-ee8144e1d182}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{1717d1a1-30db-11ec-9797-ee8144e1d182}.TMContainer00000000000000000002.regtrans-ms
+ ntuser.ini
+ OneDrive/
+ Pictures/
+ Postman/
+ proxy/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+ source/
+ TestAbstact/
+ Videos/
+'VirtualBox VMs'/
+ visualparadigm/
+"Voisinage d'impression"@
+'Voisinage réseau'@
+ vpworkspace/
+ WebApplication1/
+
+ESPOIR@ESPOIR-LABO MINGW64 ~
+$ cd desktop
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop
+$ ls
+'~$BORAH KADESI.docx'          'Nouveau document texte (2).txt'
+'~$ercicesARDUINO.docx'        'Nouveau document texte (3).txt'
+'~$ercicesDART.docx'           'Nouveau document texte.txt'
+'Adobe Photoshop CS6.lnk'*     'Nouveau dossier'/
+'BARAKA BIGEGA ESPOIR'/        'Nouveau dossier (2)'/
+'C SHARP'/                     'Nouveau dossier (3)'/
+ c#/                            octopus/
+ CAPTURE/                       org.pdf
+'Chercher tout.lnk'*           'Postman - Raccourci.lnk'*
+'DEBORAH KADESI 1.docx'         recensement.txt
+ desktop.ini                    requettes.rar
+ emu8086.lnk*                  'Revo Uninstaller.lnk'*
+'Espoir - Chrome.lnk'*          SQLQueryBlazorDB.sql
+'EXAMEN BLAZOR C#'/            'TP IA'/
+ FAZA/                          TP_L1IG.docx
+ gestion_de_stock.xlsm         'videoplayback (23).mp4'
+'HTTrack Website Copier.lnk'*  'Visual Studio Code.lnk'*
+ l1-repo/                       web/
+ lucia.pdf                      WhatsApp.lnk*
+'MEMOIRE THEOGENE NKUNDIYE'/    WIFI/
+'Microsoft Teams.lnk'*         'xampp-control - Raccourci.lnk'*
+'nos examens'/
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop
+$ mkdir github
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop
+$ cd github
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github
+$ git init
+Initialized empty Git repository in C:/Users/ESPOIR/Desktop/github/.git/
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ git status
+On branch master
+
+No commits yet
+
+nothing to commit (create/copy files and use "git add" to track)
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ll
+total 0
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ git config --global user.name "espoirbaraka"
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ git config --global user.email "esbarakabigega@gmail.com"
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ git config --global color.ui auto
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ git clone https://github.com/espoirbaraka/Gestion_regideso.git
+Cloning into 'Gestion_regideso'...
+fatal: protocol 'https' is not supported
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/c/Users/ESPOIR/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /c/Users/ESPOIR/.ssh/id_rsa.
+Your public key has been saved in /c/Users/ESPOIR/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:GBAYidun718p3EILJAs+oRlQ1ttUDyyv8+D/q8mr8YY ESPOIR@ESPOIR-LABO
+The key's randomart image is:
++---[RSA 2048]----+
+|.o+=o. oo        |
+|o.o ..o .o       |
+|o+. .+.o  .      |
+|++o+o .o.        |
+|oo.o. o.S        |
+|  o  ++o .       |
+|   . .*=+        |
+|    . EBo.       |
+|   ...o+B+o.     |
++----[SHA256]-----+
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cut C:\Users\ESPOIR\.ssh
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cut --help
+Usage: cut OPTION... [FILE]...
+Print selected parts of lines from each FILE to standard output.
+
+With no FILE, or when FILE is -, read standard input.
+
+Mandatory arguments to long options are mandatory for short options too.
+  -b, --bytes=LIST        select only these bytes
+  -c, --characters=LIST   select only these characters
+  -d, --delimiter=DELIM   use DELIM instead of TAB for field delimiter
+  -f, --fields=LIST       select only these fields;  also print any line
+                            that contains no delimiter character, unless
+                            the -s option is specified
+  -n                      (ignored)
+      --complement        complement the set of selected bytes, characters
+                            or fields
+  -s, --only-delimited    do not print lines not containing delimiters
+      --output-delimiter=STRING  use STRING as the output delimiter
+                            the default is to use the input delimiter
+  -z, --zero-terminated    line delimiter is NUL, not newline
+      --help     display this help and exit
+      --version  output version information and exit
+
+Use one, and only one of -b, -c or -f.  Each LIST is made up of one
+range, or many ranges separated by commas.  Selected input is written
+in the same order that it is read, and is written exactly once.
+Each range is one of:
+
+  N     N'th byte, character or field, counted from 1
+  N-    from N'th byte, character or field, to end of line
+  N-M   from N'th to M'th (included) byte, character or field
+  -M    from first to M'th (included) byte, character or field
+
+GNU coreutils online help: <https://www.gnu.org/software/coreutils/>
+Report cut translation bugs to <https://translationproject.org/team/>
+Full documentation at: <https://www.gnu.org/software/coreutils/cut>
+or available locally via: info '(coreutils) cut invocation'
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cut C:/Users/ESPOIR/.ssh
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cut C:/Users/ESPOIR/.ssh/
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cut /C/Users/ESPOIR/.ssh/
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cat /C/Users/ESPOIR/.ssh/
+cat: /C/Users/ESPOIR/.ssh/: Is a directory
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cat /C/Users/ESPOIR/.ssh
+cat: /C/Users/ESPOIR/.ssh: Is a directory
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cat /C/Users/ESPOIR/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUFRm75Zp/MugUQWBWh6t2Ff8sZtY3kTG2RGsU8NibcvnYf1LSrfYnGrCBZO2Rh5LZTTERS0pLHylSlUBjMHlLm+xIu3ZXnPk0yWOjspH03lum/NPI4K9oWnqk+SuVb+L1Z3fLogm91QdG0i0A59ciKnI4jVxFCfk7If8ApVnLbiwcMuslBMvvsR5TUosZXDZuszhVctonrYNPcffAc6E4MzuYdfC2+WXp9+P3r0/4iAe9ONuK0zCoKzgU1uEFhL2CqMIpkVldHZH1o3TxBVHO7VslE1KTCd5lN8o+mpLPJ9Vx/s6mvzCHwfASAaL6Eh5rTL0hxMA2Q1o6KO63q1eJ ESPOIR@ESPOIR-LABO
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ eval `ssh-agent -s`
+Agent pid 13932
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh-agent -s
+SSH_AUTH_SOCK=/tmp/ssh-9mh06uf7QaqR/agent.12952; export SSH_AUTH_SOCK;
+SSH_AGENT_PID=12356; export SSH_AGENT_PID;
+echo Agent pid 12356;
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh-add ~/.ssh/id_rsa
+Enter passphrase for /c/Users/ESPOIR/.ssh/id_rsa:
+Identity added: /c/Users/ESPOIR/.ssh/id_rsa (/c/Users/ESPOIR/.ssh/id_rsa)
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cat /C/Users/ESPOIR/.ssh/id_rsa.pub
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCUFRm75Zp/MugUQWBWh6t2Ff8sZtY3kTG2RGsU8NibcvnYf1LSrfYnGrCBZO2Rh5LZTTERS0pLHylSlUBjMHlLm+xIu3ZXnPk0yWOjspH03lum/NPI4K9oWnqk+SuVb+L1Z3fLogm91QdG0i0A59ciKnI4jVxFCfk7If8ApVnLbiwcMuslBMvvsR5TUosZXDZuszhVctonrYNPcffAc6E4MzuYdfC2+WXp9+P3r0/4iAe9ONuK0zCoKzgU1uEFhL2CqMIpkVldHZH1o3TxBVHO7VslE1KTCd5lN8o+mpLPJ9Vx/s6mvzCHwfASAaL6Eh5rTL0hxMA2Q1o6KO63q1eJ ESPOIR@ESPOIR-LABO
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ ssh -T git@github.com
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,140.82.121.4' (ECDSA) to the list of known hosts.
+Hi espoirbaraka! You've successfully authenticated, but GitHub does not provide shell access.
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ git clone git@github.com:espoirbaraka/Gestion_regideso.git
+Cloning into 'Gestion_regideso'...
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (5/5), done.
+remote: Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (5/5), done.
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$

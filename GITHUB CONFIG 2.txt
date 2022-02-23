@@ -1,0 +1,174 @@
+
+ESPOIR@ESPOIR-LABO MINGW64 ~
+$ cd desktop
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop
+$ cd github
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github (master)
+$ cd gestion_regideso
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   index.html
+
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git commit -m "First version"
+[main 05f2456] First version
+ 1 file changed, 12 insertions(+)
+ create mode 100644 index.html
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git log
+commit 05f2456395564b4dbf8e9b83745fb67e14f8e012 (HEAD -> main)
+Author: espoirbaraka <esbarakabigega@gmail.com>
+Date:   Thu Jan 13 14:27:37 2022 +0200
+
+    First version
+
+commit f5e437302495f1435b4400d969bc815003dc12dc (origin/main, origin/HEAD)
+Author: espoirbaraka <49196039+espoirbaraka@users.noreply.github.com>
+Date:   Tue Jan 11 14:42:53 2022 +0200
+
+    Initial commit
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git branch
+* main
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git branch testBranch
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git branch
+* main
+  testBranch
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git chekout testBranch
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git checkout testBranch
+Switched to branch 'testBranch'
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (testBranch)
+$ git branch
+  main
+* testBranch
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (testBranch)
+$ gi status
+bash: gi: command not found
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (testBranch)
+$ git status
+On branch testBranch
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   index.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (testBranch)
+$ git commit -a -m "commit from first branch"
+[testBranch a79b9e3] commit from first branch
+ 1 file changed, 1 insertion(+)
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (testBranch)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git checkout testBranch
+Switched to branch 'testBranch'
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (testBranch)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git merge testBranch
+Updating 05f2456..a79b9e3
+Fast-forward
+ index.html | 1 +
+ 1 file changed, 1 insertion(+)
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ ^C
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git branch -d testBranch
+Deleted branch testBranch (was a79b9e3).
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git branch
+* main
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git log
+commit a79b9e351138b0df9802c38f00ee45b7e40f8c2e (HEAD -> main)
+Author: espoirbaraka <esbarakabigega@gmail.com>
+Date:   Thu Jan 13 14:53:43 2022 +0200
+
+    commit from first branch
+
+commit 05f2456395564b4dbf8e9b83745fb67e14f8e012
+Author: espoirbaraka <esbarakabigega@gmail.com>
+Date:   Thu Jan 13 14:27:37 2022 +0200
+
+    First version
+
+commit f5e437302495f1435b4400d969bc815003dc12dc (origin/main, origin/HEAD)
+Author: espoirbaraka <49196039+espoirbaraka@users.noreply.github.com>
+Date:   Tue Jan 11 14:42:53 2022 +0200
+
+    Initial commit
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git branch testDiff
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git checkout testDiff
+Switched to branch 'testDiff'
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (testDiff)
+$ git checkout main
+Switched to branch 'main'
+M       index.html
+Your branch is ahead of 'origin/main' by 2 commits.
+  (use "git push" to publish your local commits)
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$ git diff
+diff --git a/index.html b/index.html
+index dd1e29f..e189f8b 100644
+--- a/index.html
++++ b/index.html
+@@ -9,5 +9,6 @@
+ <body>
+     <p>BONJOUR LE MONDE</p>
+     <h1>MERCI BEAUCOUP</h1>
++    <p>Je suis heureux</p>
+ </body>
+ </html>
+\ No newline at end of file
+
+ESPOIR@ESPOIR-LABO MINGW64 ~/desktop/github/gestion_regideso (main)
+$
