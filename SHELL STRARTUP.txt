@@ -1,0 +1,7 @@
+Start a program automatically when starting windows 8, 10
+
+W+R
+
+shell:startup
+
+deplacer le raccourci du programme vers ce dossier
