@@ -1,3 +1,16 @@
+BEST METHOD
+
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin git@github.com:espoirbaraka/admin-dashboard-vuejs.git
+git push -u origin main
+
+
+
+NOT VERY BEST METHOD
+
 ESPOIR@ESPOIR-LABO MINGW64 /f/MEMOIRE/react2 (master)
 $ git init
 
