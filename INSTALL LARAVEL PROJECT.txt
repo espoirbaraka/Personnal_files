@@ -1,0 +1,8 @@
+1. composer install       or      
+   composer update
+
+
+
+// if there is a problem with php version, update the php version in composer.json "php": "^7.3" to "php": "^8.0"
+
+2. php artisan key:generate
